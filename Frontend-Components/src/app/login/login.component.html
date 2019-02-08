@@ -1,0 +1,41 @@
+<div class="login-background">
+  <div class="login-content">
+    <h2 class="login-title">Sistema de Fraudes</h2>
+    <mat-card class="login-card">
+      <mat-card-content>
+        <form>
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <mat-form-field class="login-input">
+                  <input matInput placeholder="Username">
+                  <mat-icon matSuffix>account_box</mat-icon>
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field class="login-input">
+                  <input matInput placeholder="Password">
+                  <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </mat-card-content>
+      <p class="login-link"><a href="www.google.com"><strong>Forgot Password?</strong></a></p>
+      <mat-card-actions class="login-actions">
+        <div *ngIf="isLoading">
+          <button (click)="Login()" mat-raised-button class="login-button">Sign In</button>
+        </div>
+        <div *ngIf="!isLoading">
+            Loading...
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<div class="login-footer">
+  <img src="./assets/img/logo_adira.jpg" height="100" width="200">
+</div>

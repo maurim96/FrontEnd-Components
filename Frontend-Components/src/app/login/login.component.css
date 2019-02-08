@@ -1,0 +1,75 @@
+@media only screen and (min-width: 1200px) {
+    .login-input {
+        /* width: 25vw; */
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .login-input {
+        /* width: 30vw; */
+        width: 100%;
+    }
+}
+
+.login-background {
+    background-color: #58778C;
+    margin: 0;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.login-content {
+    margin-top: 45vh;
+}
+.login-title {
+    text-align: center;
+    color: white;
+}
+.login-card {
+    height: 40%;
+    min-width: 315px;
+    width: 25vw;
+}
+.login-input {
+    font-size: medium;
+}
+.login-actions {
+    padding: 0;
+    text-align: center;
+}
+.login-button {
+    background-color: #58778C;
+    color: white;    
+    font-size: larger;
+    margin-top: 0;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    width: 100%;    
+    -webkit-transition: opacity .6s;
+    transition: opacity .6s;
+}
+.login-button:hover {
+    opacity: 0.85;
+    -webkit-transition: opacity .6s;
+    transition: opacity .6s;
+}
+.login-link {
+    font-size: small;     
+    text-align: right;
+    margin-top: -5%;
+}
+.login-link a {
+    color: #58778C;
+}
+.login-footer {    
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    text-align: center;
+}
